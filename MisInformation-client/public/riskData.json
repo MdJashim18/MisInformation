@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "title": "AI-Generated Misinformation Risk Analysis",
+    "description": "Belief degree data for DS/ER + BRB combined algorithm",
+    "alternatives": ["Deepfake", "Fake News", "Voice Scam", "Phishing"],
+    "riskGrades": ["VHR", "HR", "MR", "LR", "VLR"],
+    "isCalculated" : "false",
+    "criteria": [
+      {
+        "id": "C1",
+        "name": "Technical Feasibility of Creation",
+        "weight": 0.20,
+        "subCriteria": [
+          {
+            "id": "C1S1",
+            "name": "Required AI skills/tools",
+            "weight": 0.35,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.412, "HR": 0.294, "MR": 0.235, "LR": 0.059, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.324, "HR": 0.235, "MR": 0.294, "LR": 0.088, "VLR": 0.059 },
+              "Voice Scam":  { "VHR": 0.242, "HR": 0.182, "MR": 0.394, "LR": 0.182, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.273, "HR": 0.212, "MR": 0.242, "LR": 0.212, "VLR": 0.061 }
+            }
+          },
+          {
+            "id": "C1S2",
+            "name": "Time required to generate",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.303, "HR": 0.212, "MR": 0.333, "LR": 0.091, "VLR": 0.061 },
+              "Fake News":   { "VHR": 0.273, "HR": 0.273, "MR": 0.303, "LR": 0.121, "VLR": 0.030 },
+              "Voice Scam":  { "VHR": 0.250, "HR": 0.219, "MR": 0.438, "LR": 0.093, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.303, "HR": 0.182, "MR": 0.333, "LR": 0.182, "VLR": 0.000 }
+            }
+          },
+          {
+            "id": "C1S3",
+            "name": "Cost involved",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.455, "HR": 0.212, "MR": 0.212, "LR": 0.091, "VLR": 0.030 },
+              "Fake News":   { "VHR": 0.273, "HR": 0.182, "MR": 0.394, "LR": 0.121, "VLR": 0.030 },
+              "Voice Scam":  { "VHR": 0.271, "HR": 0.212, "MR": 0.364, "LR": 0.091, "VLR": 0.061 },
+              "Phishing":    { "VHR": 0.273, "HR": 0.242, "MR": 0.212, "LR": 0.182, "VLR": 0.091 }
+            }
+          },
+          {
+            "id": "C1S4",
+            "name": "Scalability (mass production ease)",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.303, "HR": 0.303, "MR": 0.273, "LR": 0.091, "VLR": 0.030 },
+              "Fake News":   { "VHR": 0.242, "HR": 0.212, "MR": 0.242, "LR": 0.242, "VLR": 0.062 },
+              "Voice Scam":  { "VHR": 0.250, "HR": 0.219, "MR": 0.438, "LR": 0.063, "VLR": 0.030 },
+              "Phishing":    { "VHR": 0.242, "HR": 0.273, "MR": 0.364, "LR": 0.091, "VLR": 0.030 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "name": "Detection Difficulty",
+        "weight": 0.25,
+        "subCriteria": [
+          {
+            "id": "C2S1",
+            "name": "Current detection tool accuracy",
+            "weight": 0.30,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.273, "HR": 0.303, "MR": 0.364, "LR": 0.060, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.212, "HR": 0.333, "MR": 0.303, "LR": 0.152, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.303, "HR": 0.213, "MR": 0.333, "LR": 0.121, "VLR": 0.030 },
+              "Phishing":    { "VHR": 0.303, "HR": 0.121, "MR": 0.364, "LR": 0.182, "VLR": 0.030 }
+            }
+          },
+          {
+            "id": "C2S2",
+            "name": "Forensic analysis difficulty",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.364, "HR": 0.273, "MR": 0.152, "LR": 0.181, "VLR": 0.030 },
+              "Fake News":   { "VHR": 0.242, "HR": 0.424, "MR": 0.212, "LR": 0.061, "VLR": 0.061 },
+              "Voice Scam":  { "VHR": 0.242, "HR": 0.212, "MR": 0.455, "LR": 0.091, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.212, "HR": 0.121, "MR": 0.364, "LR": 0.242, "VLR": 0.061 }
+            }
+          },
+          {
+            "id": "C2S3",
+            "name": "Human perception accuracy",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.294, "HR": 0.265, "MR": 0.324, "LR": 0.059, "VLR": 0.058 },
+              "Fake News":   { "VHR": 0.265, "HR": 0.324, "MR": 0.265, "LR": 0.088, "VLR": 0.058 },
+              "Voice Scam":  { "VHR": 0.242, "HR": 0.152, "MR": 0.455, "LR": 0.121, "VLR": 0.030 },
+              "Phishing":    { "VHR": 0.242, "HR": 0.212, "MR": 0.364, "LR": 0.152, "VLR": 0.030 }
+            }
+          },
+          {
+            "id": "C2S4",
+            "name": "Platform-level auto detection rate",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.313, "HR": 0.281, "MR": 0.250, "LR": 0.125, "VLR": 0.031 },
+              "Fake News":   { "VHR": 0.181, "HR": 0.273, "MR": 0.303, "LR": 0.091, "VLR": 0.152 },
+              "Voice Scam":  { "VHR": 0.194, "HR": 0.194, "MR": 0.451, "LR": 0.161, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.303, "HR": 0.242, "MR": 0.303, "LR": 0.152, "VLR": 0.000 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "C3",
+        "name": "Dissemination & Spread Potential",
+        "weight": 0.20,
+        "subCriteria": [
+          {
+            "id": "C3S1",
+            "name": "Virality on social media",
+            "weight": 0.35,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.364, "HR": 0.212, "MR": 0.394, "LR": 0.030, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.182, "HR": 0.303, "MR": 0.394, "LR": 0.121, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.219, "HR": 0.219, "MR": 0.406, "LR": 0.094, "VLR": 0.062 },
+              "Phishing":    { "VHR": 0.212, "HR": 0.212, "MR": 0.364, "LR": 0.152, "VLR": 0.060 }
+            }
+          },
+          {
+            "id": "C3S2",
+            "name": "Ease of sharing",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.250, "HR": 0.281, "MR": 0.313, "LR": 0.166, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.250, "HR": 0.281, "MR": 0.344, "LR": 0.063, "VLR": 0.063 },
+              "Voice Scam":  { "VHR": 0.250, "HR": 0.281, "MR": 0.406, "LR": 0.063, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.219, "HR": 0.156, "MR": 0.344, "LR": 0.250, "VLR": 0.031 }
+            }
+          },
+          {
+            "id": "C3S3",
+            "name": "Potential audience reach",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.281, "HR": 0.313, "MR": 0.344, "LR": 0.062, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.323, "HR": 0.323, "MR": 0.290, "LR": 0.032, "VLR": 0.032 },
+              "Voice Scam":  { "VHR": 0.250, "HR": 0.375, "MR": 0.281, "LR": 0.094, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.281, "HR": 0.219, "MR": 0.344, "LR": 0.156, "VLR": 0.000 }
+            }
+          },
+          {
+            "id": "C3S4",
+            "name": "Platform vulnerability",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.281, "HR": 0.281, "MR": 0.313, "LR": 0.125, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.219, "HR": 0.375, "MR": 0.219, "LR": 0.125, "VLR": 0.062 },
+              "Voice Scam":  { "VHR": 0.250, "HR": 0.281, "MR": 0.313, "LR": 0.125, "VLR": 0.031 },
+              "Phishing":    { "VHR": 0.218, "HR": 0.250, "MR": 0.313, "LR": 0.219, "VLR": 0.000 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "C4",
+        "name": "Severity of Potential Impact",
+        "weight": 0.20,
+        "subCriteria": [
+          {
+            "id": "C4S1",
+            "name": "Financial/Economic loss potential",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.367, "HR": 0.200, "MR": 0.400, "LR": 0.033, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.233, "HR": 0.467, "MR": 0.233, "LR": 0.067, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.241, "HR": 0.276, "MR": 0.313, "LR": 0.414, "VLR": 0.069 },
+              "Phishing":    { "VHR": 0.300, "HR": 0.200, "MR": 0.300, "LR": 0.200, "VLR": 0.000 }
+            }
+          },
+          {
+            "id": "C4S2",
+            "name": "Social/Psychological harm",
+            "weight": 0.30,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.333, "HR": 0.267, "MR": 0.267, "LR": 0.067, "VLR": 0.066 },
+              "Fake News":   { "VHR": 0.233, "HR": 0.367, "MR": 0.333, "LR": 0.067, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.200, "HR": 0.300, "MR": 0.300, "LR": 0.200, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.267, "HR": 0.133, "MR": 0.433, "LR": 0.100, "VLR": 0.067 }
+            }
+          },
+          {
+            "id": "C4S3",
+            "name": "Political/Societal division",
+            "weight": 0.25,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.400, "HR": 0.200, "MR": 0.300, "LR": 0.067, "VLR": 0.033 },
+              "Fake News":   { "VHR": 0.233, "HR": 0.333, "MR": 0.300, "LR": 0.100, "VLR": 0.034 },
+              "Voice Scam":  { "VHR": 0.233, "HR": 0.267, "MR": 0.400, "LR": 0.100, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.267, "HR": 0.233, "MR": 0.400, "LR": 0.100, "VLR": 0.000 }
+            }
+          },
+          {
+            "id": "C4S4",
+            "name": "Long-term reputation damage",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.400, "HR": 0.100, "MR": 0.367, "LR": 0.133, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.300, "HR": 0.200, "MR": 0.367, "LR": 0.133, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.233, "HR": 0.233, "MR": 0.400, "LR": 0.134, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.233, "HR": 0.300, "MR": 0.300, "LR": 0.133, "VLR": 0.034 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "C5",
+        "name": "Victim Susceptibility",
+        "weight": 0.15,
+        "subCriteria": [
+          {
+            "id": "C5S1",
+            "name": "Emotional manipulation power",
+            "weight": 0.30,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.367, "HR": 0.267, "MR": 0.266, "LR": 0.100, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.310, "HR": 0.345, "MR": 0.207, "LR": 0.137, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.276, "HR": 0.138, "MR": 0.517, "LR": 0.034, "VLR": 0.035 },
+              "Phishing":    { "VHR": 0.267, "HR": 0.167, "MR": 0.367, "LR": 0.133, "VLR": 0.066 }
+            }
+          },
+          {
+            "id": "C5S2",
+            "name": "Trust exploitation level",
+            "weight": 0.30,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.400, "HR": 0.200, "MR": 0.200, "LR": 0.167, "VLR": 0.033 },
+              "Fake News":   { "VHR": 0.333, "HR": 0.233, "MR": 0.267, "LR": 0.067, "VLR": 0.100 },
+              "Voice Scam":  { "VHR": 0.267, "HR": 0.267, "MR": 0.400, "LR": 0.033, "VLR": 0.033 },
+              "Phishing":    { "VHR": 0.233, "HR": 0.233, "MR": 0.400, "LR": 0.100, "VLR": 0.034 }
+            }
+          },
+          {
+            "id": "C5S3",
+            "name": "Target group size",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.400, "HR": 0.233, "MR": 0.267, "LR": 0.100, "VLR": 0.000 },
+              "Fake News":   { "VHR": 0.267, "HR": 0.333, "MR": 0.267, "LR": 0.100, "VLR": 0.033 },
+              "Voice Scam":  { "VHR": 0.233, "HR": 0.300, "MR": 0.400, "LR": 0.067, "VLR": 0.000 },
+              "Phishing":    { "VHR": 0.322, "HR": 0.194, "MR": 0.355, "LR": 0.129, "VLR": 0.000 }
+            }
+          },
+          {
+            "id": "C5S4",
+            "name": "Urgency/pressure factor",
+            "weight": 0.20,
+            "beliefs": {
+              "Deepfake":    { "VHR": 0.290, "HR": 0.355, "MR": 0.226, "LR": 0.097, "VLR": 0.032 },
+              "Fake News":   { "VHR": 0.300, "HR": 0.233, "MR": 0.267, "LR": 0.200, "VLR": 0.000 },
+              "Voice Scam":  { "VHR": 0.267, "HR": 0.133, "MR": 0.467, "LR": 0.067, "VLR": 0.066 },
+              "Phishing":    { "VHR": 0.300, "HR": 0.100, "MR": 0.433, "LR": 0.133, "VLR": 0.034 }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
